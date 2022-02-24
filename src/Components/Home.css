@@ -1,0 +1,414 @@
+@font-face {
+    font-family: RightGrotesk;
+    src: url(../Components/Fonts/RightGrotesk-Medium.otf);
+}
+
+html{scroll-behavior: smooth;}
+*{
+  font-size: 18px;
+}
+.Sara{
+    font-family: RightGrotesk;
+    background-color: black !important;
+
+}
+
+a{
+  color: white;
+}
+
+
+a:hover{
+  color: white;
+}
+
+.Overlay{
+  padding-top: 10vh;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .Overlay{
+      padding: 0px ;
+  }
+}
+.home{
+    background-image: url(./Imgs/Head.jpeg);
+    background-position: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.707);
+    background-blend-mode: darken;
+}
+.DivB{
+    background-color: black;
+}
+.WTSV{
+    color: #badd85;
+}
+.DivRd{
+    background-color: black;
+}
+.RoadMap{
+    background-image: url(./Imgs/RdUp.png) !important;
+}
+.FaqDiv{
+    background-color: black;
+}
+.RDRA{
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+.ColA{
+    border-radius: 20px;
+    background-color: #ede9f9 !important;
+}
+.About{
+  align-items: center !important;
+}
+.ico{
+  font-size: 40px !important;
+}
+.RD h6{
+  font-size: 50px;
+}
+
+
+
+
+
+
+.collapsible-link::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .collapsible-link::after {
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+    
+  }
+  
+  .collapsible-link[aria-expanded='true']::after {
+
+    transform: rotate(90deg) translateX(-1px);
+  }
+  
+  .collapsible-link[aria-expanded='true']::before {
+    transform: rotate(180deg);
+  }
+  
+  .card{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 20px !important;
+    
+  }
+  .card-header{
+
+    border-radius: 20px !important;
+
+  }
+  .TeamCon{
+    background-image: url(./Imgs/NBGC\ Banner.png);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+  }
+  .TeamImgs{
+
+    background-color: rgba(0, 0, 0, 0.707);
+    background-blend-mode: darken;
+    /* border-top-left-radius: 90px;
+    border-top-right-radius: 90px; */
+    /* max-width: 70% !important; */
+    padding: 30px ;
+    border-radius: 40px;
+  }
+  .TRow{
+    padding: 150px !important;
+  }
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .TRow{
+        padding: 10px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+.main {
+  text-align: right;
+background: none;
+
+}
+.hamburger {
+  
+
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 15px;
+}
+.hamburger:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: #badd85;
+ /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #badd85, #badd85);
+ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #badd85, #badd85);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transform: rotate(0deg);
+  transition: all 0.4s cubic-bezier(0.54, -0.1, 0.57, 0.57);
+}
+.hamburger .hamburger-input {
+  
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.hamburger .hamburger-line {
+  
+  width: 100%;
+  background: #fff;
+  height: 2px;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.4s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  position: relative;
+}
+.hamburger .hamburger-line.first, .hamburger .hamburger-line.third {
+  width: 50%;
+  
+}
+.hamburger .hamburger-line.third {
+  margin-left: 50%;
+  transform-origin: left;
+}
+.menu-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.menu-button-wrapper .item-list {
+  position: absolute;
+  top: 90px;
+  transform: translateX(-50%) scale(0);
+  transform-origin: center;
+  transition: all 0.4s cubic-bezier(0.54, -0.1, 0.57, 0.57);
+  background-color: #303242;
+  color: #fff;
+  width: 200px;
+  left: 50%;
+  padding: 15px 0;
+  text-align: left;
+  border-radius: 100px;
+  font-weight: 300;
+  opacity: 0;
+  user-select: none;
+}
+.menu-button-wrapper .item-list div {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.menu-button-wrapper .menu-button {
+  
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.menu-button:checked ~ .item-list {
+  transform: translateX(-85%) scale(1);
+  border-radius: 20px;
+  opacity: 1;
+  user-select: auto;
+  z-index: 5000;
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.second {
+  transform: rotate(-45deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.first {
+  transform: translate(2px, 8px) rotate(-135deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.third {
+  transform: translate(11px, -3px) rotate(-135deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger:before {
+  transform: rotate(50deg);
+  
+}
+.signature-wrapper {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  
+  text-align: center;
+}
+.signature-wrapper .signature-title {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #444;
+  
+}
+.signature-wrapper .signature-link {
+  color: #444;
+  display: inline-block;
+  margin: 20px 0 10px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  border-bottom: solid 2px #444;
+  
+}
+
+/* .AllFaq{
+  width: 1200px !important;
+}
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .AllFaq{
+    padding-left: 20px;
+    width: 400px !important;
+  }
+}
+@media screen and (min-device-width : 480px) and (max-device-width : 780px) {
+  .AllFaq{
+    width: 500px !important;
+  }
+}
+@media screen and (min-device-width : 780px) and (max-device-width : 1000px) {
+  .AllFaq{
+    width: 700px !important;
+  }
+}
+@media screen and (min-device-width : 1000px) and (max-device-width : 1200px) {
+  .AllFaq{
+    width: 980px !important;
+  }
+} */
+
+
+      /* {-----------------------------------------------------------------------------------------------------------------------------------} */
+
+      .RDImg{
+        width: 15% !important;
+      }
+
+
+      .circle {
+        padding: 13px 20px;
+        border-radius: 50%;
+        background-color: white;
+        color: black;
+        max-height: 50px;
+        z-index: 2;
+      }
+      
+      .how-it-works.row .col-2 {
+        align-self: stretch;
+      }
+      .how-it-works.row .col-2::after {
+        content: "";
+        position: absolute;
+        border-left: 3px solid white;
+        z-index: 1;
+      }
+      .how-it-works.row .col-2.bottom::after {
+        height: 50%;
+        left: 50%;
+        top: 50%;
+      }
+      .how-it-works.row .col-2.full::after {
+        height: 100%;
+        left: calc(50% - 3px);
+      }
+      .how-it-works.row .col-2.top::after {
+        height: 100%;
+        left: 50%;
+        top: 0;
+      }
+      
+      
+      .timeline div {
+        padding: 0;
+        height: 40px;
+      }
+      .timeline hr {
+        border-top: 3px solid white;
+        margin: 0;
+        top: 17px;
+        position: relative;
+      }
+      .timeline .col-2 {
+        display: flex;
+        overflow: hidden;
+      }
+      .timeline .corner {
+        border: 3px solid white;
+        width: 100%;
+        position: relative;
+        border-radius: 15px;
+      }
+      .timeline .top-right {
+        left: 50%;
+        top: -50%;
+      }
+      .timeline .left-bottom {
+        left: -50%;
+        top: calc(50% - 3px);
+      }
+      .timeline .top-left {
+        left: -50%;
+        top: -50%;
+      }
+      .timeline .right-bottom {
+        left: 50%;
+        top: calc(50% - 3px);
+      }
+      
