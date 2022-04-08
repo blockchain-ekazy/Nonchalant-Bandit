@@ -1,6 +1,4 @@
-# ![Nonchalant Bandit Page1](https://user-images.githubusercontent.com/100062048/155754733-8f983f4a-3bde-4bec-b461-585a07a1e838.png)
-![Nonchalant Bandit](https://user-images.githubusercontent.com/100062048/155754766-139ee316-20a4-46de-9d8d-c0f943f30052.png)
-Getting Started with Create React App
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

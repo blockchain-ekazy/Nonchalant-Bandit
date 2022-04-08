@@ -3,16 +3,16 @@ import "./Home.css";
 
 import GifS from "../Components/Imgs/ezgif.com-gif-maker.gif";
 
-import Bnr from "../Components/Imgs/NBGC Banner.png";
+import Bnr from "../Components/Imgs/NBGC Banner.webp";
 
 import RD from "../Components/Imgs/Racoon-logo-round.png";
 
 import TeamA from "../Components/Imgs/David-removebg-preview.png";
 import TeamB from "../Components/Imgs/Sanjay-removebg-preview.png";
 
-import DivBImg from "./Imgs/Div2.png";
-import DT from "./Imgs/DrawTrains.png";
-import DTH from "./Imgs/DTH.png";
+import logo1 from "./Imgs/logo1.png";
+import logo2 from "./Imgs/logo2.png";
+import logo3 from "./Imgs/logo3.png";
 
 export default function Home() {
   return (
@@ -21,13 +21,19 @@ export default function Home() {
         <div class="container p-0 pr-md-5">
           <div className="row align-items-center">
             <div className="col-8 col-md-6 ">
-              <a href="https://twitter.com/NonchalantBnft">
+              <a target="_blank" href="https://twitter.com/NonchalantBnft">
                 <i class="fa-brands fa-twitter WTSV ico "></i>
               </a>
-              <a href="https://instagram.com/nonchalantbanditnft">
+              <a
+                target="_blank"
+                href="https://instagram.com/nonchalantbanditnft"
+              >
                 <i class="fa-brands fa-instagram WTSV ico ml-3"></i>
               </a>
-              <a href="https://discord.com/channels/939666076726333460/939666081163935781">
+              <a
+                target="_blank"
+                href="https://discord.com/channels/939666076726333460/939666081163935781"
+              >
                 <i class="fa-brands fa-discord WTSV ico ml-3"></i>
               </a>
             </div>
@@ -67,25 +73,6 @@ export default function Home() {
 
         <div className="container  Overlay">
           <div className="row align-items-center">
-            {/* <div className="col-12 col-lg-6">
-              <div className="container">
-                <div className="row ">
-                  <div className="col-6 mt-2">
-                    <img src={GifE} className="w-100"></img>
-                  </div>
-                  <div className="col-6 mt-2">
-                    <img src={GifF} className="w-100"></img>
-                  </div>
-
-                  <div className="col-6 mt-2">
-                    <img src={GifH} className="w-100 pt-3"></img>
-                  </div>
-                  <div className="col-6 mt-2">
-                    <img src={GifI} className="w-100 pt-3"></img>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div className="col-12 col-lg-12 pt-3">
               <h1 className="text-center display-4 WTSV">
                 The Nonchalant Bandit Golf Club
@@ -104,19 +91,6 @@ export default function Home() {
               <h5 className="text-white text-center ">
                 10,000 Nonchalant Bandits shaping the course of golf
               </h5>
-              {/* <p className="text-center text-white py-5">
-                {" "}
-                Unlock exclusive perks with Squirrel Wallet when you have your
-                own Squirrelly Squirrel! Join our Discord when you have your own
-                Squirrelly Squirrel! Join our Discord and get smart about NFTs +
-                DeFi.
-              </p> */}
-              {/* <h6 className="text-center text-white  ">
-                Don’t be a normal Bandit.
-              </h6>
-              <h6 className="text-center text-white font-weight-bold ">
-                ✨ Be a Nonchalant Bandit ✨
-              </h6> */}
             </div>
           </div>
         </div>
@@ -132,24 +106,15 @@ export default function Home() {
               </h1>
               <p className="text-white pt-5">
                 The Nonchalant Bandit Golf Club will be a members club like no
-                other. Something has recently been launched that is similar, but
-                not like this. We're looking to be one of the most exclusive
-                golf clubs IRL and the Metaverse. It’ll be so unique that
-                everyone will want your NFT off you! <br />
+                other. Something similar has recently been launched, but not
+                like this. We're looking to be one of the most exclusive golf
+                clubs IRL and the Metaverse. It’ll be so unique that everyone
+                will want your NFT off you! <br />
                 <br />
                 Owning tokens will not only give you the chance be part of an
                 extremely exclusive golf club and community, but give you the
                 chance to purchase rare merchandise unavailable to anyone else
                 and chances to win huge amounts of money.<br></br>
-                <br />
-                We're two guys new to the world of NFT's. We have complimentary
-                business skills in the real world and are on a mission to prove
-                that with dedication, hard work and a HUGE dream, anything is
-                possible. We are both in love with the game of golf and want to
-                create a revolutionary community, shaping the future of golf for
-                the next generation. Somewhere so unique, token holders will be
-                the envy of all golfers around the World.
-                <br />
                 <br />
                 Over the coming years, we plan to have exclusive golf clubs
                 strategically placed all over the world...we look forward to
@@ -179,7 +144,7 @@ export default function Home() {
             <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
               <div class="circle font-weight-bold">1</div>
             </div>
-            <div class="col-10 col-md-6 ">
+            <div class="col-10 col-md-10 ">
               <h5 className="text-white">Phase 1</h5>
               <p className="text-white">
                 {" "}
@@ -209,7 +174,7 @@ export default function Home() {
           </div>
 
           <div class="row align-items-center justify-content-end how-it-works d-flex">
-            <div class="col-10 col-md-6 text-right">
+            <div class="col-10 col-md-10 text-right">
               <h5 className="text-white">Phase 2</h5>
               <p className="text-white">
                 • Collection 2 drops <br />
@@ -242,11 +207,11 @@ export default function Home() {
             <div class="col-2 text-center  top d-inline-flex justify-content-center align-items-center ">
               <div class="circle font-weight-bold">3</div>
             </div>
-            <div class="col-10 col-md-6">
+            <div class="col-10 col-md-10">
               <h5 className="text-white">Phase 3</h5>
               <p className="text-white">
                 • Collection 3 drops <br />
-                • Holders of both collections 1 and 2 receive a FREE NFT
+                • Holders of both collections 1 and 2 receive a FREE NFT*
                 <br />
                 • Mint remaining NFT’s
                 <br />
@@ -287,110 +252,31 @@ export default function Home() {
               <div class="circle font-weight-bold">4</div>
             </div>
           </div>
-
-          {/* <div class="row timeline">
-      <div class="col-2">
-        <div class="corner right-bottom"></div>
-      </div>
-      <div class="col-8">
-        <hr/>
-      </div>
-      <div class="col-2">
-        <div class="corner top-left"></div>
-      </div>
-    </div> */}
         </div>
       </div>
 
-      {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
-
-      {/* <div className="container p-5 RD">
-        <h1 className="text-center WTSV display-3 pb-4"> Road Map</h1>
-        <div className="row RDRA  mb-5">
-          <div className="col-12 col-lg-2 p-4  ColA">
-            <h6 className="display-3 ">0%</h6>
+      <div className="container pt-4">
+        <div className="row logos">
+          <div className="col-4 px-0">
+            <img src={logo1} />
           </div>
-
-          <div className="col-12 col-lg-10">
-            <p>
-              • Giveaway 100 NFTs to early supporters <br />
-              • Mint all NFTs for 0.08 ETH <br />
-              • Planting of 50,000 trees…enough to fill a golf course <br />
-              • Donate $50,000 each to a US and UK foundation for introducing
-              kids to golf <br />
-              • Send out all original holders a unique, one-off piece of
-              headwear never to be available to the public <br />• Randomly
-              generate a monthly winner to get 2 ETH deposited into their wallet
-            </p>
+          <div className="col-4 px-0">
+            <img src={logo2} />
+          </div>
+          <div className="col-4 px-0">
+            <img src={logo3} />
           </div>
         </div>
+      </div>
 
-        <div className="row RDRA mb-5">
-          <div className="col-12 col-lg-2 p-4  ColA">
-            <h6 className="display-4">25%</h6>
-          </div>
-
-          <div className="col-12 col-lg-10 ">
-            <p>
-              • Collection 2 drops <br />
-              • Holders of Drop 1 will get discounted and priority access to
-              drop 2 <br />
-              • Mint remaining NFTs <br />
-              • Donate further funds to the development of kids golf + 1 other
-              charity chosen by discord members <br />
-              • Launch official merchandise only available for token holders to
-              purchase. <br />• Further monthly giveaways of ETH
-            </p>
-          </div>
-        </div>
-
-        <div className="row RDRA mb-5">
-          <div className="col-12 col-lg-2 p-4  ColA">
-            <h6 className="display-4">50%</h6>
-          </div>
-
-          <div className="col-12 col-lg-10">
-            <p>
-              • Collection 3 drops <br />
-              • Holders of both collections 1 and 2 receive a FREE NFT
-              <br />
-              • Mint remaining NFT’s
-              <br />
-              • Purchase a golf course, completely renovate to a premium
-              standard
-              <br />
-              • ONLY holders of collections 1,2 AND 3 get the chance to join
-              this golf club
-              <br />
-              • Holders of any 2 collections get 2 green fee vouchers a year
-              with guest
-              <br />• Holders of any 1 collection get 1 green fee a year + guest
-            </p>
-          </div>
-        </div>
-
-        <div className="row RDRA mb-5">
-          <div className="col-12 col-lg-2 py-4   ColA">
-            <h6 className="display-4">100%</h6>
-          </div>
-
-          <div className="col-12 col-lg-10">
-            <p>• Project 2 starts with even bigger incentives!</p>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div className="DivRd container-fluid">
-        <div className="RoadMap container ">
-          <img src={DTH} className="w-50 d-block mx-auto py-5"></img>
-          <img src={DT} className="w-100"></img>
-        </div>
-      </div> */}
+      <small className="pb-1 d-block text-white text-center  py-5">
+        *1 per wallet, not one per NFT held.
+      </small>
 
       <a id="Faq"></a>
-      <div className="FaqDiv container-fluid py-5">
-        <div className="container pt-5">
-          <h1 className="text-center display-4 pt-5 WTSV">Nonchalant FAQS</h1>
+      <div className="FaqDiv container-fluid pb-5">
+        <div className="container">
+          <h1 className="text-center display-4 WTSV">Nonchalant FAQ's</h1>
         </div>
       </div>
 
@@ -405,9 +291,9 @@ export default function Home() {
                 >
                   <h6 class="mb-0 font-weight-bold">
                     <a
-                      href="#"
+                      href="#collapseOne"
                       data-toggle="collapse"
-                      data-target="#collapseOne"
+                      data-bs-target="#collapseOne"
                       aria-expanded="true"
                       aria-controls="collapseOne"
                       class="d-block position-relative text-dark text-uppercase collapsible-link py-2"
@@ -562,13 +448,13 @@ export default function Home() {
                 >
                   <div class="card-body ">
                     <p class="font-weight-light m-0">
-                      We'll be running various competitions via our socials and
-                      discord channel for Whitelist spots. Minting will be
-                      available here on our website.
+                      The actual date of public minting is unknown yet but will
+                      be sometime in March 2022. The presale for people on the
+                      whitelist will be 24 hours prior to public sale.
                       <br />
                       <br />
-                      There will only be 1,000 whitelist spots available, so
-                      head to our discord channel to get yourself on it.
+                      There will only be 1,000 whitelist spot availble, so head
+                      to our discord channel to get yourself on it.
                     </p>
                   </div>
                 </div>
@@ -581,6 +467,15 @@ export default function Home() {
       <div className="container">
         <a id="T"></a>
         <h1 className="text-center pt-5  display-3 WTSV">The Team</h1>
+        <p className="text-white text-center">
+          We're two guys new to the world of NFT's. We have complimentary
+          business skills in the real world and are on a mission to prove that
+          with dedication, hard work and a HUGE dream, anything is possible. We
+          are both in love with the game of golf and want to create a
+          revolutionary community, shaping the future of golf for the next
+          generation. Somewhere so unique, token holders will be the envy of all
+          golfers around the World.
+        </p>
         <div className="row  ">
           <div className="col-12 col-md-6 mt-3">
             <div className="TeamImgs ">
